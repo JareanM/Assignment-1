@@ -8,33 +8,85 @@
 </head>
 
 <style>
+    body {
+        background-color: #ebf3f7;
+    }
     .card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        margin: auto;
         background-color: white;
         border-radius: 20px;
+        border: 2px solid grey;
+        box-shadow: 1px 2px 1.5px 2px #9c9c9c;
+        height: 400x;
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
     }
 
-    .x {
+    ul {
+        list-style-type: none;
+        width: 180px;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
 
+    li {
+        transition: transform 0.3s ease;
+        border-radius: 20px;
+        border: 2px solid grey;
+        margin-bottom: 10px;
+    }
+
+    li:hover {
+        background-color: #9edaf7;
+        cursor: pointer;
+        transform: translateX(2px);
+
+    }
+
+    button {
+        border-radius: 20px;
+        border: 2px solid grey;
+        cursor: pointer;
+        background-color: #9edaf7;
+        margin-bottom: 10px;
+    }
+
+    button:hover {
+        background-color: #1e80c7;
+        color: white;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #1e80c7;
+    }
+
+    .myP {
+        padding: 10px;
     }
 </style>
 
 <body>
     <div class = "card">
         <section>
-        <h1>Jarean Maratas</h1>
-        <p>A student in Union Springs Academy who's been taking intro web for 4 months now.</p>
+        <center><h1>Jarean Maratas</h1></center>
+        <p class = "myP">A student in Union Springs Academy who's been taking intro web for 4 months now.</p>
         </section>
 
         <section>
-        <div>UI/UX design</div>
-        <div>Full-Stack Development</div>
-        <div>Coffee Enthusiast</div>
+        <ul>
+            <li>UI/UX</li>
+            <li>Server Side</li>
+            <li>Cyber Security</li>
+        </ul>
         </section>
 
-        <button>Get In Touch</button>
+        <center><button>Get In Touch</button></center>
     </div>
 </body>
 </html>
